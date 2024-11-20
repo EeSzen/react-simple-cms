@@ -1,5 +1,6 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Button from "../../components/button";
+import Badge from "../../components/badge";
 
 function ManageUsers() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function ManageUsers() {
                 <td>Jack</td>
                 <td>jack@gmail.com</td>
                 <td>
-                  <span className="badge bg-success">User</span>
+                  <Badge color="green"label="User"/>
                 </td>
                 <td className="text-end">
                   <div className="buttons">
@@ -79,7 +80,7 @@ function ManageUsers() {
                 <td>Jane</td>
                 <td>jane@gmail.com</td>
                 <td>
-                  <span className="badge bg-info">Editor</span>
+                  <Badge color="turquoise"label="Editor"/>
                 </td>
                 <td className="text-end">
                   <div className="buttons">
@@ -117,7 +118,7 @@ function ManageUsers() {
                 <td>John</td>
                 <td>john@gmail.com</td>
                 <td>
-                  <span className="badge bg-primary">Admin</span>
+                  <Badge color="blue"label="Admin"/>
                 </td>
                 <td className="text-end">
                   <div className="buttons">

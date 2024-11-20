@@ -1,5 +1,6 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Button from "../../components/button";
+import Badge from "../../components/badge";
 
 function ManagePost() {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ function ManagePost() {
                 <th scope="row">5</th>
                 <td>Post 5</td>
                 <td>
-                  <span className="badge bg-warning">Pending Review</span>
+                  <Badge color="yellow" label="Pending Review" />
                 </td>
                 <td className="text-end">
                   <div className="buttons">
@@ -75,11 +76,11 @@ function ManagePost() {
                 <th scope="row">4</th>
                 <td>Post 4</td>
                 <td>
-                  <span className="badge bg-success">Publish</span>
+                  <Badge color="green" label="Publish" />
                 </td>
                 <td className="text-end">
                   <div className="buttons">
-                  <Button
+                    <Button
                       color="blue"
                       icon="eye"
                       size="small"
@@ -112,11 +113,11 @@ function ManagePost() {
                 <th scope="row">3</th>
                 <td>Post 3</td>
                 <td>
-                  <span className="badge bg-success">Publish</span>
+                  <Badge color="green" label="Publish" />
                 </td>
                 <td className="text-end">
                   <div className="buttons">
-                  <Button
+                    <Button
                       color="blue"
                       icon="eye"
                       size="small"
@@ -149,11 +150,11 @@ function ManagePost() {
                 <th scope="row">2</th>
                 <td>Post 2</td>
                 <td>
-                  <span className="badge bg-success">Publish</span>
+                  <Badge color="green" label="Publish" />
                 </td>
                 <td className="text-end">
                   <div className="buttons">
-                  <Button
+                    <Button
                       color="blue"
                       icon="eye"
                       size="small"
@@ -186,11 +187,11 @@ function ManagePost() {
                 <th scope="row">1</th>
                 <td>Post 1</td>
                 <td>
-                  <span className="badge bg-success">Publish</span>
+                  <Badge color="green" label="Publish" />
                 </td>
                 <td className="text-end">
                   <div className="buttons">
-                  <Button
+                    <Button
                       color="blue"
                       icon="eye"
                       size="small"
